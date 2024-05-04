@@ -40,7 +40,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-family: var(--primary-font);
     background-color: var(--neutral-off-black);
 }
@@ -49,6 +48,7 @@ main {
     width: 375px;
     border-radius: 8px;
     padding: 40px;
+    margin: 40px;
     background-color: var(--neutral-dark-grey);
 }
 
@@ -125,7 +125,6 @@ main {
 /* attributes */
 
 .attribution {
-    margin: 50px auto;
     font-family: sans-serif;
     color: var(--neutral-white);
 }
