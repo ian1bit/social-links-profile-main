@@ -1,3 +1,131 @@
-* {
+/* Reset */
+
+*,
+*:after,
+*:before {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* variables */
+
+:root {
+    --primary-green: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+    --primary-font: "Inter", sans-serif;
+}
+
+/* gerals styles */
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--primary-font);
+    background-color: var(--neutral-off-black);
+}
+
+main {
+    width: 375px;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: var(--neutral-dark-grey);
+}
+
+/* profile infos */
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-profile {
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.photo-profile img {
+    border-radius: 50%;
+}
+
+.name-profile {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--neutral-white);
+    margin-bottom: 10px;
+}
+
+.profile-region {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+}
+
+.description {
+    font-family: sans-serif;
+    font-size: .9rem;
+    color: var(--neutral-white);
+    margin-bottom: 30px;
+}
+
+/* social links */
+
+.social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links li {
+    width: 100%;
+}
+
+.social-links li a {
+    display: block;
+    width: 100%;
+    background-color: var(--neutral-grey);
+    color: var(--neutral-white);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.social-links li a:hover {
+    background: var(--primary-green);
+    color: var(--neutral-off-black);
+    transition: all ease-in .2s;
+}
+
+/* attributes */
+
+.attribution {
+    margin: 50px auto;
+    font-family: sans-serif;
+    color: var(--neutral-white);
 }
